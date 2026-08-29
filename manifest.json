@@ -1,0 +1,14 @@
+{
+  "background_color": "#0d1117",
+  "dir": "rtl",
+  "display": "standalone",
+  "name": "سامانه هوشمند مدرسه",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "مدیریت مدرسه",
+  "start_url": "/",
+  "theme_color": "#59a7ff",
+  "id": "school-manager-app",
+  "description": "سامانه هوشمند مدیریت نمرات، حضور و غیاب و کلاس‌های مدرسه - ساخته شده توسط دانش‌آموز ۱۵ ساله",
+  "lang": "fa"
+}
