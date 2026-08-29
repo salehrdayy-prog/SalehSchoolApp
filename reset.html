@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حذف اطلاعات</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .reset-box {
+            background: #0d1117;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 50px auto;
+            max-width: 400px;
+            text-align: center;
+            border: 1px solid #30363d;
+        }
+        .reset-box h2 { color: #f85149; margin-bottom: 20px; }
+        .reset-box p { color: #8b949e; margin-bottom: 20px; line-height: 1.8; }
+        .reset-box button {
+            background: #da3633;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .reset-box button:hover { background: #f85149; }
+    </style>
+</head>
+<body>
+    <div class="reset-box">
+        <h2>⚠️ حذف کامل اطلاعات</h2>
+        <p>با زدن دکمه‌ی زیر، تمام اطلاعات ذخیره شده (مدیران، معلم‌ها، دانش‌آموزان، نمرات و حضور غیاب) <strong>برای همیشه پاک می‌شود.</strong></p>
+        <p style="font-size: 12px; color: #8b949e;">توجه: اگر نسخه پشتیبان دارید، بعد از پاک کردن می‌توانید آن را بازیابی کنید.</p>
+        <button onclick="clearAllData()">🗑️ حذف تمام اطلاعات</button>
+    </div>
+
+    <script>
+        function clearAllData() {
+            if (confirm("آیا مطمئن هستید که می‌خواهید تمام اطلاعات را حذف کنید؟ این عمل قابل بازگشت نیست!")) {
+                // پاک کردن تمام داده‌های ذخیره شده در مرورگر
+                localStorage.clear();
+                alert("تمام اطلاعات با موفقیت حذف شد! حالا می‌توانید دوباره شروع کنید.");
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</body>
+</html>
